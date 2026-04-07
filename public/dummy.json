@@ -1,67 +1,314 @@
 {
-	"categories": [
-		{ "id": "C1", "name": "Electronics" },
-		{ "id": "C2", "name": "Apparel" }
-	],
-	"subCategories": [
-		{ "id": "S1", "categoryId": "C1", "name": "Laptop" },
-		{ "id": "S2", "categoryId": "C1", "name": "Smartphone" },
-		{ "id": "S3", "categoryId": "C2", "name": "Men's Tops" },
-		{ "id": "S4", "categoryId": "C2", "name": "Footwear" }
-	],
-	"brands": [
-		{ "id": "B1", "subCategoryId": "S1", "name": "Asus" },
-		{ "id": "B2", "subCategoryId": "S1", "name": "Apple" },
-		{ "id": "B3", "subCategoryId": "S2", "name": "Samsung" },
-		{ "id": "B4", "subCategoryId": "S2", "name": "Xiaomi" },
-		{ "id": "B5", "subCategoryId": "S3", "name": "Erigo" },
-		{ "id": "B6", "subCategoryId": "S3", "name": "Uniqlo" },
-		{ "id": "B7", "subCategoryId": "S4", "name": "Nike" },
-		{ "id": "B8", "subCategoryId": "S4", "name": "Adidas" }
-	],
-	"products": [
-		{
-			"id": "P1",
-			"brandId": "B1",
-			"name": "Asus ROG Zephyrus",
-			"price": 25000000
-		},
-		{
-			"id": "P2",
-			"brandId": "B2",
-			"name": "MacBook Pro M3",
-			"price": 30000000
-		},
-		{
-			"id": "P3",
-			"brandId": "B3",
-			"name": "Samsung Galaxy S24",
-			"price": 15000000
-		},
-		{ "id": "P4", "brandId": "B4", "name": "Xiaomi 14 Pro", "price": 12000000 },
-		{
-			"id": "P5",
-			"brandId": "B5",
-			"name": "Erigo T-Shirt Black",
-			"price": 150000
-		},
-		{
-			"id": "P6",
-			"brandId": "B6",
-			"name": "Uniqlo Flannel Shirt",
-			"price": 399000
-		},
-		{
-			"id": "P7",
-			"brandId": "B7",
-			"name": "Nike Air Force 1",
-			"price": 1500000
-		},
-		{
-			"id": "P8",
-			"brandId": "B8",
-			"name": "Adidas Ultraboost",
-			"price": 2800000
-		}
-	]
+  "categories": [
+    { "id": "C1", "name": "Electronics" },
+    { "id": "C2", "name": "Apparel" }
+  ],
+  "subCategories": [
+    { "id": "S1", "categoryId": "C1", "name": "Laptop" },
+    { "id": "S2", "categoryId": "C1", "name": "Smartphone" },
+    { "id": "S3", "categoryId": "C2", "name": "Men's Tops" },
+    { "id": "S4", "categoryId": "C2", "name": "Footwear" }
+  ],
+  "brands": [
+    { "id": "B1", "subCategoryId": "S1", "name": "Asus" },
+    { "id": "B2", "subCategoryId": "S1", "name": "Apple" },
+    { "id": "B3", "subCategoryId": "S2", "name": "Samsung" },
+    { "id": "B4", "subCategoryId": "S2", "name": "Xiaomi" },
+    { "id": "B5", "subCategoryId": "S3", "name": "Erigo" },
+    { "id": "B6", "subCategoryId": "S3", "name": "Uniqlo" },
+    { "id": "B7", "subCategoryId": "S4", "name": "Nike" },
+    { "id": "B8", "subCategoryId": "S4", "name": "Adidas" }
+  ],
+  "products": [
+    {
+      "id": "P1",
+      "brandId": "B1",
+      "name": "Asus ROG Zephyrus G14",
+      "price": 25000000
+    },
+    {
+      "id": "P2",
+      "brandId": "B2",
+      "name": "MacBook Pro M3 Max",
+      "price": 30000000
+    },
+    {
+      "id": "P3",
+      "brandId": "B3",
+      "name": "Samsung Galaxy S24 Ultra",
+      "price": 15000000
+    },
+    {
+      "id": "P4",
+      "brandId": "B4",
+      "name": "Xiaomi 14 Pro Ultra",
+      "price": 12000000
+    },
+    {
+      "id": "P5",
+      "brandId": "B5",
+      "name": "Erigo T-Shirt Black Edition",
+      "price": 150000
+    },
+    {
+      "id": "P6",
+      "brandId": "B6",
+      "name": "Uniqlo Flannel Check Shirt",
+      "price": 399000
+    },
+    {
+      "id": "P7",
+      "brandId": "B7",
+      "name": "Nike Air Force 1 '07",
+      "price": 1500000
+    },
+    {
+      "id": "P8",
+      "brandId": "B8",
+      "name": "Adidas Ultraboost Light",
+      "price": 2800000
+    },
+    {
+      "id": "P9",
+      "brandId": "B1",
+      "name": "Asus TUF Gaming F15",
+      "price": 14500000
+    },
+    {
+      "id": "P10",
+      "brandId": "B2",
+      "name": "iPad Pro 11-inch M2",
+      "price": 16000000
+    },
+    {
+      "id": "P11",
+      "brandId": "B3",
+      "name": "Samsung Galaxy Tab S9 FE",
+      "price": 13000000
+    },
+    {
+      "id": "P12",
+      "brandId": "B4",
+      "name": "Xiaomi Pad 6 Pro",
+      "price": 5500000
+    },
+    {
+      "id": "P13",
+      "brandId": "B5",
+      "name": "Erigo Coach Jacket Skyline",
+      "price": 450000
+    },
+    {
+      "id": "P14",
+      "brandId": "B6",
+      "name": "Uniqlo Airism V-Neck",
+      "price": 199000
+    },
+    {
+      "id": "P15",
+      "brandId": "B7",
+      "name": "Nike Dunk Low Retro",
+      "price": 1700000
+    },
+    {
+      "id": "P16",
+      "brandId": "B8",
+      "name": "Adidas Stan Smith Classic",
+      "price": 1300000
+    },
+    {
+      "id": "P17",
+      "brandId": "B1",
+      "name": "Asus Zenbook 14 OLED",
+      "price": 18000000
+    },
+    {
+      "id": "P18",
+      "brandId": "B2",
+      "name": "MacBook Air M2 15-inch",
+      "price": 17500000
+    },
+    {
+      "id": "P19",
+      "brandId": "B3",
+      "name": "Samsung Galaxy Z Fold 5",
+      "price": 24000000
+    },
+    {
+      "id": "P20",
+      "brandId": "B7",
+      "name": "Nike Pegasus 40 Running",
+      "price": 1900000
+    },
+    {
+      "id": "P21",
+      "brandId": "B1",
+      "name": "Asus Vivobook Pro 15",
+      "price": 12000000
+    },
+    {
+      "id": "P22",
+      "brandId": "B2",
+      "name": "MacBook Pro 14 M3",
+      "price": 28000000
+    },
+    {
+      "id": "P23",
+      "brandId": "B3",
+      "name": "Samsung Galaxy A54 5G",
+      "price": 6000000
+    },
+    {
+      "id": "P24",
+      "brandId": "B4",
+      "name": "Xiaomi Redmi Note 13 Pro",
+      "price": 4500000
+    },
+    {
+      "id": "P25",
+      "brandId": "B5",
+      "name": "Erigo Chino Pants Olive",
+      "price": 300000
+    },
+    {
+      "id": "P26",
+      "brandId": "B6",
+      "name": "Uniqlo Selvedge Jeans",
+      "price": 699000
+    },
+    {
+      "id": "P27",
+      "brandId": "B7",
+      "name": "Nike Air Max 270",
+      "price": 2300000
+    },
+    {
+      "id": "P28",
+      "brandId": "B8",
+      "name": "Adidas Samba OG",
+      "price": 2200000
+    },
+    {
+      "id": "P29",
+      "brandId": "B1",
+      "name": "Asus ExpertBook B9",
+      "price": 32000000
+    },
+    {
+      "id": "P30",
+      "brandId": "B2",
+      "name": "Mac Studio M2 Ultra",
+      "price": 60000000
+    },
+    {
+      "id": "P31",
+      "brandId": "B3",
+      "name": "Samsung Galaxy S23 FE",
+      "price": 9000000
+    },
+    { "id": "P32", "brandId": "B4", "name": "Xiaomi 13T", "price": 6500000 },
+    {
+      "id": "P33",
+      "brandId": "B5",
+      "name": "Erigo Hoodie Navy",
+      "price": 350000
+    },
+    {
+      "id": "P34",
+      "brandId": "B6",
+      "name": "Uniqlo Heattech Long Sleeve",
+      "price": 249000
+    },
+    {
+      "id": "P35",
+      "brandId": "B7",
+      "name": "Nike Jordan 1 Low",
+      "price": 2500000
+    },
+    {
+      "id": "P36",
+      "brandId": "B8",
+      "name": "Adidas Gazelle",
+      "price": 1800000
+    },
+    {
+      "id": "P37",
+      "brandId": "B1",
+      "name": "Asus ROG Strix SCAR 18",
+      "price": 65000000
+    },
+    {
+      "id": "P38",
+      "brandId": "B2",
+      "name": "Mac Mini M2 Pro",
+      "price": 21000000
+    },
+    {
+      "id": "P39",
+      "brandId": "B3",
+      "name": "Samsung Galaxy Z Flip 5",
+      "price": 16000000
+    },
+    {
+      "id": "P40",
+      "brandId": "B4",
+      "name": "Xiaomi Poco F5",
+      "price": 5000000
+    },
+    {
+      "id": "P41",
+      "brandId": "B5",
+      "name": "Erigo Denim Jacket",
+      "price": 500000
+    },
+    {
+      "id": "P42",
+      "brandId": "B6",
+      "name": "Uniqlo Bomber Jacket",
+      "price": 899000
+    },
+    {
+      "id": "P43",
+      "brandId": "B7",
+      "name": "Nike Blazer Mid '77",
+      "price": 1600000
+    },
+    { "id": "P44", "brandId": "B8", "name": "Adidas NMD_R1", "price": 2400000 },
+    {
+      "id": "P45",
+      "brandId": "B1",
+      "name": "Asus Flow X16",
+      "price": 42000000
+    },
+    {
+      "id": "P46",
+      "brandId": "B2",
+      "name": "MacBook Air M3 13-inch",
+      "price": 19000000
+    },
+    {
+      "id": "P47",
+      "brandId": "B3",
+      "name": "Samsung Galaxy M54",
+      "price": 5500000
+    },
+    {
+      "id": "P48",
+      "brandId": "B4",
+      "name": "Xiaomi 12 Lite",
+      "price": 4000000
+    },
+    {
+      "id": "P49",
+      "brandId": "B7",
+      "name": "Nike Vaporfly 3",
+      "price": 4200000
+    },
+    {
+      "id": "P50",
+      "brandId": "B8",
+      "name": "Adidas Forum Low",
+      "price": 1700000
+    }
+  ]
 }
