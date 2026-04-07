@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Dynamic Product Catalog Challenge
 
-## Getting Started
+Hey There! Welcome to my take on the Product Catalog Challenge. While the brief mentioned React Router, I decided to level up and build this using Next.js 15 (App Router) to demonstrate modern Server-Side Rendering (SSR) and seamless URL state management. 🚀✨
 
-First, run the development server:
+## 🌟 Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. 🛡️ Smart Initial State (brief:1)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   first load, I kept it clean. Only the Main Category is active. To follow the rules of the "Cascading" hierarchy, the Sub-Category and Brand dropdowns are locked (disabled)
+   ![Catalog Cascading Logic](./public/_Cascade.gif)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. 🌊 Cascading Behavior (brief:2)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   Selecting a category triggers a reactive chain. This chain always filled in with relevant data. So there won't be a Uniqlo Laptop
+   ![Catalog Cascading Logic](./public/_Cascade.gif)
 
-## Learn More
+3. 🍞 Dynamic Breadcrumbs (brief:5)
 
-To learn more about Next.js, take a look at the following resources:
+   Navigation that actually knows where you are!
+   ![Catalog Cascading Logic](./public/_Breadcrumbs.gif)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. 💾 State Persistence (Refresh-Proof) (breif:6)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   Go ahead—refresh the page, copy the link, or go back/forward in your browser. The filters stay exactly where you left them
+   ![Catalog Cascading Logic](./public/_Persistence.gif)
 
-## Deploy on Vercel
+5. 🧹 One-Click Reset (brief:7)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   Got lost in the filters? Hit the Reset Filter button. It clears the URL back to the base path, instantly returning the UI to the initial "everything shown" state
+   ![Catalog Cascading Logic](./public/_Reset.gif)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📸 Screenshots
+
+![SS1](<./public/SS(1).png>)
+![SS2](<./public/SS(2).png>)
+![SS3](<./public/SS(3).png>)
+![SS4](<./public/SS(4).png>)
+![SS5](<./public/SS(5).png>)
+
+### 🔥 Other Features
+
+Basically all following the challenge brief
+
+### 🛠️ Note
+
+- The style color have not been themed correctly. Best to view when browser is in light mode
+- If I have not modified it, data is coming from a const object (not fetching from local .json)
+
+#### No deployment for this time, but you can always try on your machine
+
+#### See ya!
