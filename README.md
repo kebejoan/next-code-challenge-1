@@ -16,7 +16,7 @@ Hey There! Welcome to my take on the Product Catalog Challenge. While the brief 
 
 3. 🍞 Dynamic Breadcrumbs (brief:5)
 
-   Navigation that actually knows where you are!
+   Navigation that actually knows where you are
    ![Catalog Cascading Logic](./public/_Breadcrumbs.gif)
 
 4. 💾 State Persistence (Refresh-Proof) (breif:6)
