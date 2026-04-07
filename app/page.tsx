@@ -1,5 +1,6 @@
 import { Product } from "@/types";
 import { CATALOG_DATA } from "@/data/dummy";
+import FilterComponent from "@/components/FilterComponent";
 
 interface pageProps {
   searchParams: { [key: string]: string | undefined };
@@ -13,7 +14,7 @@ export default async function Home({ searchParams }: pageProps) {
   const params = await searchParams; //why does this must be await but it hints that "'await' has no effect on the type of this expression."
   const { category, subcategory, brand } = params;
 
-  const data = CATALOG_DATA;
+  const data = CATALOG_DATA; //--> CATALOG_DATA must be changed to be coming from a .json rather than const
 
   //brain of the filter
   const filteredData = CATALOG_DATA.products.filter((p: Product) => {
@@ -41,8 +42,10 @@ export default async function Home({ searchParams }: pageProps) {
 
   return (
     <main className="w-full flex flex-col md:flex-row ">
-      {/* Comboboxes */}
-      <div className="w-1/4 outline-1"> Comboboxes </div>
+      {/* Comboboxes / FilterControls */}
+      <div className="w-1/4 outline-1">
+        <FilterComponent data={data} />
+      </div>
       <div className="grow flex flex-col outline-2">
         {/* Breadcrumbs */}
         <nav> Breadcrumbs </nav>
@@ -52,7 +55,7 @@ export default async function Home({ searchParams }: pageProps) {
           {filteredData.map((product: Product) => (
             <div key={product.id}>
               <h2>{product.name}</h2>
-              <p>{product.price}</p>
+              <p>Rp {product.price}</p>
             </div>
           ))}
         </section>
