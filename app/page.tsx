@@ -41,23 +41,29 @@ export default async function Home({ searchParams }: pageProps) {
   });
 
   return (
-    <main className="w-full flex flex-col md:flex-row ">
-      {/* Comboboxes / FilterControls */}
-      <div className="w-1/4 outline-1">
-        <FilterComponent data={data} />
+    <main>
+      <div className="w-full text-center font-bold text-2xl">
+        <h1>RevoU Code Challenge #1 - Kebejoan</h1>
       </div>
-      <div className="grow flex flex-col outline-2">
-        {/* Breadcrumbs */}
-        <nav> Breadcrumbs </nav>
-        {/* Products */}
-        <section>
-          <h1>Products</h1>
-          {filteredData.map((product: Product) => (
-            <div key={product.id}>
-              <h2>{product.name}</h2>
-              <p>Rp {product.price}</p>
-            </div>
-          ))}
+      <div className="w-full flex flex-col md:flex-row ">
+        {/* Comboboxes / FilterControls */}
+        <div className=" md:w-1/6 outline-1 rounded-md m-2 p-2">
+          <FilterComponent data={data} />
+        </div>
+        <section className="grow flex flex-col rounded-md m-2 p-2 bg-slate-100">
+          {/* Breadcrumbs */}
+          <nav className="border-b-2 border-slate-300 font-bold text-sm">
+            This {">"} should be {">"} breadcrumbs
+          </nav>
+          {/* Products */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pt-2">
+            {filteredData.map((product: Product) => (
+              <div className="p-2 rounded-md bg-slate-200" key={product.id}>
+                <h2 className="font-bold">{product.name}</h2>
+                <p>Rp {product.price}</p>
+              </div>
+            ))}
+          </div>
         </section>
       </div>
     </main>
