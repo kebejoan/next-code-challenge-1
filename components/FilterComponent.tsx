@@ -42,13 +42,14 @@ export default function FilterComponent({ data }: { data: CatalogData }) {
   };
 
   return (
-    <div className="flex flex-col">
-      <h1>Filter</h1>
+    <div className="flex flex-col gap-4 ">
+      <h1 className="font-bold">Filter Your Product</h1>
       {/* SELECT CATEGORY */}
       <select
         name="category"
         value={selectedCategory || ""}
         onChange={(e) => handleChange("category", e.target.value)}
+        className="bg-slate-200 p-2 disabled:bg-gray-200 disabled:text-gray-300"
       >
         <option value="" disabled>
           Main Category
@@ -65,6 +66,7 @@ export default function FilterComponent({ data }: { data: CatalogData }) {
         value={selectedSubcategory || ""}
         onChange={(e) => handleChange("subcategory", e.target.value)}
         disabled={!selectedCategory}
+        className="bg-slate-200 p-2 disabled:bg-gray-200 disabled:text-gray-300"
       >
         <option value="" disabled>
           Sub-Category
@@ -81,6 +83,7 @@ export default function FilterComponent({ data }: { data: CatalogData }) {
         value={selectedBrand || ""}
         onChange={(e) => handleChange("brand", e.target.value)}
         disabled={!selectedSubcategory}
+        className="bg-slate-200 p-2 disabled:bg-gray-200 disabled:text-gray-300"
       >
         <option value="" disabled>
           Brand
@@ -91,7 +94,10 @@ export default function FilterComponent({ data }: { data: CatalogData }) {
           </option>
         ))}
       </select>
-      <button className="cursor-pointer" onClick={handleReset}>
+      <button
+        className="cursor-pointer bg-slate-400 rounded-md p-2 font-bold"
+        onClick={handleReset}
+      >
         Reset
       </button>
     </div>
