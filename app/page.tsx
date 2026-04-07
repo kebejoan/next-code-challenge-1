@@ -1,5 +1,5 @@
-import { Product } from "@/types";
-import { CATALOG_DATA } from "@/data/dummy";
+import { CatalogData, Product } from "@/types";
+// import { CATALOG_DATA } from "@/data/dummy"; --> Reverted to fetching from JSON instead. Interface and type still works OK
 import FilterComponent from "@/components/FilterComponent";
 
 interface pageProps {
@@ -8,8 +8,8 @@ interface pageProps {
 
 export default async function Home({ searchParams }: pageProps) {
   // FETCHING FROM .json still doesnt work. I will work with const object for now
-  // const res = await fetch("http://localhost:3000/data/dummy.json");
-  // const data = await res.json();
+  const res = await fetch("http://localhost:3000/dummy.json"); // This actually works now
+  const CATALOG_DATA: CatalogData = await res.json();
 
   const params = await searchParams; //why does this must be await but it hints that "'await' has no effect on the type of this expression."
   const { category, subcategory, brand } = params;
